@@ -31,7 +31,8 @@ jobs:
 
       # Step 4 — Ensure mvnw is executable (prevents 'Permission denied' during docker build)
       - name: Make mvnw executable
-        working-directory: ./BACKEND-DOCKERFILE
+        working-directory: ./BACKEND-SPORTS
+      
         run: chmod +x mvnw
 
       # Step 5 — Build & Push Backend Image
